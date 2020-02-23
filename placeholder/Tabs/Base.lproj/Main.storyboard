@@ -16,9 +16,9 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="h6T-vc-Fz3" kind="relationship" relationship="viewControllers" id="D43-q0-W3A"/>
                         <segue destination="oDz-m8-idw" kind="relationship" relationship="viewControllers" id="NO6-9Q-ZfK"/>
                         <segue destination="gXP-6S-drL" kind="relationship" relationship="viewControllers" id="DUJ-uJ-2H9"/>
+                        <segue destination="IYg-Et-x3f" kind="relationship" relationship="viewControllers" id="dot-tp-7CD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -35,15 +35,15 @@
             </objects>
             <point key="canvasLocation" x="595" y="-150"/>
         </scene>
-        <!--MapScreen-->
-        <scene sceneID="ba0-Q7-hA2">
+        <!--ProfileScreen-->
+        <scene sceneID="l0J-w4-JE2">
             <objects>
-                <viewControllerPlaceholder storyboardName="MapScreen" id="h6T-vc-Fz3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="uuS-ym-VYo"/>
+                <viewControllerPlaceholder storyboardName="ProfileScreen" id="IYg-Et-x3f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="G4c-83-s0f"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9M6-XS-Bl7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPX-Hi-6mF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="-87"/>
+            <point key="canvasLocation" x="691" y="121"/>
         </scene>
         <!--QRScannerScreen-->
         <scene sceneID="vvS-VR-SVm">

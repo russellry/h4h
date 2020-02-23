@@ -28,7 +28,7 @@ class PaymentViewController: UIViewController, UITextFieldDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange), name: UIResponder.keyboardWillHideNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-        startCheckout()
+//        startCheckout()
         payButton.addTarget(self, action: #selector(pay), for: .touchUpInside)
     }
     
@@ -84,7 +84,8 @@ class PaymentViewController: UIViewController, UITextFieldDelegate {
     
     @objc
     func pay() {
-//        startCheckout()
+        startCheckout()
+        sleep(1)
         guard let paymentIntentClientSecret = paymentIntentClientSecret else {
             return;
         }
