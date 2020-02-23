@@ -16,7 +16,10 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func clickBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

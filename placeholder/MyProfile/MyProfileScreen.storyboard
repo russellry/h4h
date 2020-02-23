@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GmI-lp-Cl8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="KYD-Oq-9RK">
+            <objects>
+                <viewController id="mKf-94-jSl" customClass="MyProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ak5-wu-4d8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="1Mp-Ts-Nn8">
+                                <rect key="frame" x="114" y="152" width="186" height="184"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLZ-AF-PPA">
+                                <rect key="frame" x="134" y="368" width="146.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgV-As-6hK">
+                                <rect key="frame" x="16" y="425" width="350" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="1cd-Ai-VQf"/>
+                                    <constraint firstAttribute="height" constant="138" id="Sgy-I5-zrB"/>
+                                </constraints>
+                                <string key="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vq-ED-g9m">
+                                <rect key="frame" x="52.5" y="643" width="309" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="AQ4-oR-Qfa"/>
+                                    <constraint firstAttribute="height" constant="40" id="w6q-av-ha8"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="donateBtn"/>
+                                <connections>
+                                    <segue destination="9On-v7-c8k" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="9uJ-TX-0yw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xgV-As-6hK" firstAttribute="leading" secondItem="7rm-XZ-Phz" secondAttribute="leading" constant="16" id="6qg-aI-Z13"/>
+                            <constraint firstItem="cLZ-AF-PPA" firstAttribute="top" secondItem="1Mp-Ts-Nn8" secondAttribute="bottom" constant="32" id="R3F-Xe-wht"/>
+                            <constraint firstItem="2Vq-ED-g9m" firstAttribute="top" secondItem="xgV-As-6hK" secondAttribute="bottom" constant="80" id="RmA-SY-to6"/>
+                            <constraint firstItem="cLZ-AF-PPA" firstAttribute="centerX" secondItem="Ak5-wu-4d8" secondAttribute="centerX" id="SOp-ej-GAQ"/>
+                            <constraint firstItem="2Vq-ED-g9m" firstAttribute="centerX" secondItem="Ak5-wu-4d8" secondAttribute="centerX" id="SQI-7a-kZ2"/>
+                            <constraint firstItem="1Mp-Ts-Nn8" firstAttribute="top" secondItem="7rm-XZ-Phz" secondAttribute="top" constant="64" id="eVz-QI-qsN"/>
+                            <constraint firstItem="1Mp-Ts-Nn8" firstAttribute="centerX" secondItem="Ak5-wu-4d8" secondAttribute="centerX" id="sjy-UL-KLh"/>
+                            <constraint firstItem="xgV-As-6hK" firstAttribute="top" secondItem="cLZ-AF-PPA" secondAttribute="bottom" constant="16" id="uim-ml-SeP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7rm-XZ-Phz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="9XH-cT-A2d"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vA-2d-BDz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="87.723214285714278"/>
+        </scene>
+        <!--PaymentScreen-->
+        <scene sceneID="fWu-SU-4J7">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="urE-cv-ulJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="PaymentScreen" id="9On-v7-c8k" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Yco-Qy-J5L"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="1705" y="135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Dg-3c-T9k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GmI-lp-Cl8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Skb-v9-Wa8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mKf-94-jSl" kind="relationship" relationship="rootViewController" id="lOn-Qo-asT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8oc-ta-Lt6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="donateBtn" width="309" height="40"/>
+        <image name="profile" width="186" height="184"/>
+    </resources>
+</document>

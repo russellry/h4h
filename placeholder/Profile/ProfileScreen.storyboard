@@ -56,52 +56,60 @@
                                     <segue destination="5PW-92-tv9" kind="presentation" id="HZ7-zk-psw"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet" translatesAutoresizingMaskIntoConstraints="NO" id="auP-6L-yuQ">
-                                <rect key="frame" x="96" y="591" width="87" height="87"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="L0C-CZ-HZA"/>
-                                    <constraint firstAttribute="width" constant="87" id="m9Q-ZR-S05"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr" translatesAutoresizingMaskIntoConstraints="NO" id="7XJ-pY-lI4">
-                                <rect key="frame" x="231" y="591" width="87" height="87"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="1Pz-dL-kaU"/>
-                                    <constraint firstAttribute="height" constant="87" id="6hH-4e-Qab"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHL-IO-yNc">
-                                <rect key="frame" x="102" y="686" width="75" height="21"/>
+                                <rect key="frame" x="85" y="686" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NV-gG-Ld6">
-                                <rect key="frame" x="240" y="686" width="69" height="21"/>
+                                <rect key="frame" x="260" y="686" width="69" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHM-rh-h1e">
+                                <rect key="frame" x="80" y="591" width="87" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="XaO-gm-Ctd"/>
+                                    <constraint firstAttribute="height" constant="87" id="ZW8-Xe-OHx"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="wallet"/>
+                                <connections>
+                                    <segue destination="9On-v7-c8k" kind="presentation" modalPresentationStyle="fullScreen" id="3KP-Px-i2J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFi-4b-TTD">
+                                <rect key="frame" x="247" y="591" width="87" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="ATo-Wh-Z98"/>
+                                    <constraint firstAttribute="height" constant="87" id="ECu-uZ-C96"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="qr"/>
+                                <connections>
+                                    <segue destination="ZTp-6X-NX8" kind="presentation" modalPresentationStyle="fullScreen" id="Lea-k3-Lbb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="xHL-IO-yNc" firstAttribute="top" secondItem="auP-6L-yuQ" secondAttribute="bottom" constant="8" id="5R0-nv-vSD"/>
+                            <constraint firstItem="YFi-4b-TTD" firstAttribute="top" secondItem="kSA-GF-2Hx" secondAttribute="bottom" constant="16" id="44r-dp-mU4"/>
+                            <constraint firstItem="PHM-rh-h1e" firstAttribute="leading" secondItem="7rm-XZ-Phz" secondAttribute="leading" constant="80" id="4Sd-b0-1dK"/>
                             <constraint firstItem="xgV-As-6hK" firstAttribute="leading" secondItem="7rm-XZ-Phz" secondAttribute="leading" constant="16" id="6qg-aI-Z13"/>
                             <constraint firstItem="kSA-GF-2Hx" firstAttribute="centerX" secondItem="Ak5-wu-4d8" secondAttribute="centerX" id="77G-9V-YzG"/>
                             <constraint firstItem="jlU-KU-aO3" firstAttribute="centerX" secondItem="Ak5-wu-4d8" secondAttribute="centerX" id="7nD-8O-49u"/>
-                            <constraint firstItem="auP-6L-yuQ" firstAttribute="top" secondItem="kSA-GF-2Hx" secondAttribute="bottom" constant="16" id="8ZF-GX-wfV"/>
-                            <constraint firstItem="7rm-XZ-Phz" firstAttribute="trailing" secondItem="7XJ-pY-lI4" secondAttribute="trailing" constant="96" id="CnL-Un-2nE"/>
-                            <constraint firstItem="xHL-IO-yNc" firstAttribute="leading" secondItem="7rm-XZ-Phz" secondAttribute="leading" constant="102" id="FNP-AV-azO"/>
+                            <constraint firstItem="5NV-gG-Ld6" firstAttribute="top" secondItem="YFi-4b-TTD" secondAttribute="bottom" constant="8" id="7yS-a5-y46"/>
+                            <constraint firstItem="xHL-IO-yNc" firstAttribute="leading" secondItem="7rm-XZ-Phz" secondAttribute="leading" constant="85" id="FNP-AV-azO"/>
                             <constraint firstItem="cLZ-AF-PPA" firstAttribute="top" secondItem="1Mp-Ts-Nn8" secondAttribute="bottom" constant="8" id="R3F-Xe-wht"/>
                             <constraint firstItem="kSA-GF-2Hx" firstAttribute="top" secondItem="xgV-As-6hK" secondAttribute="bottom" constant="8" id="S2y-eS-6MI"/>
                             <constraint firstItem="cLZ-AF-PPA" firstAttribute="centerX" secondItem="Ak5-wu-4d8" secondAttribute="centerX" id="SOp-ej-GAQ"/>
                             <constraint firstItem="xgV-As-6hK" firstAttribute="top" secondItem="TOd-7I-5gk" secondAttribute="bottom" constant="8" id="Sw7-Xa-ZfH"/>
                             <constraint firstItem="TOd-7I-5gk" firstAttribute="leading" secondItem="7rm-XZ-Phz" secondAttribute="leading" constant="16" id="UgE-3d-bvE"/>
-                            <constraint firstItem="7XJ-pY-lI4" firstAttribute="top" secondItem="kSA-GF-2Hx" secondAttribute="bottom" constant="16" id="VIp-ut-AQv"/>
-                            <constraint firstItem="7rm-XZ-Phz" firstAttribute="trailing" secondItem="5NV-gG-Ld6" secondAttribute="trailing" constant="105" id="ZVT-6j-f6e"/>
-                            <constraint firstItem="auP-6L-yuQ" firstAttribute="leading" secondItem="7rm-XZ-Phz" secondAttribute="leading" constant="96" id="bZ4-oU-QLa"/>
+                            <constraint firstItem="7rm-XZ-Phz" firstAttribute="trailing" secondItem="YFi-4b-TTD" secondAttribute="trailing" constant="80" id="Xwj-jY-Lb1"/>
+                            <constraint firstItem="xHL-IO-yNc" firstAttribute="top" secondItem="PHM-rh-h1e" secondAttribute="bottom" constant="8" id="YHd-J9-nLL"/>
+                            <constraint firstItem="7rm-XZ-Phz" firstAttribute="trailing" secondItem="5NV-gG-Ld6" secondAttribute="trailing" constant="85" id="ZVT-6j-f6e"/>
                             <constraint firstItem="jlU-KU-aO3" firstAttribute="top" secondItem="7rm-XZ-Phz" secondAttribute="top" constant="16" id="daf-5R-9OS"/>
-                            <constraint firstItem="5NV-gG-Ld6" firstAttribute="top" secondItem="7XJ-pY-lI4" secondAttribute="bottom" constant="8" id="fiw-Ay-3sb"/>
+                            <constraint firstItem="PHM-rh-h1e" firstAttribute="top" secondItem="kSA-GF-2Hx" secondAttribute="bottom" constant="16" id="rKB-dB-Do4"/>
                             <constraint firstItem="1Mp-Ts-Nn8" firstAttribute="centerX" secondItem="Ak5-wu-4d8" secondAttribute="centerX" id="sjy-UL-KLh"/>
                             <constraint firstItem="1Mp-Ts-Nn8" firstAttribute="top" secondItem="jlU-KU-aO3" secondAttribute="bottom" constant="32" id="vKu-9U-zBS"/>
                             <constraint firstItem="TOd-7I-5gk" firstAttribute="top" secondItem="cLZ-AF-PPA" secondAttribute="bottom" constant="8" id="wqc-fs-UKN"/>
@@ -121,7 +129,27 @@
                 <viewControllerPlaceholder storyboardName="BenefactorsScreen" id="5PW-92-tv9" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Kq-h6-kPi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="120"/>
+            <point key="canvasLocation" x="767" y="62"/>
+        </scene>
+        <!--WalletScreen-->
+        <scene sceneID="fWu-SU-4J7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WalletScreen" id="9On-v7-c8k" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Yco-Qy-J5L"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="urE-cv-ulJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741" y="222"/>
+        </scene>
+        <!--MyQRScreen-->
+        <scene sceneID="dt7-45-bQl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyQRScreen" id="ZTp-6X-NX8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="c2u-d0-9FD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DmI-dS-hba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="275"/>
         </scene>
     </scenes>
     <resources>

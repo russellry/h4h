@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KPL-4T-z0A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My QR Code-->
+        <scene sceneID="bdu-6Y-8NJ">
+            <objects>
+                <viewController id="4z6-JV-SYX" customClass="MyQRViewController" customModule="placeholder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="meh-0E-odg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan my code to know more about me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXd-Pb-RfF">
+                                <rect key="frame" x="58" y="563" width="298" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareCode" translatesAutoresizingMaskIntoConstraints="NO" id="Ads-rH-3bp">
+                                <rect key="frame" x="147" y="648" width="120" height="18"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareCode" translatesAutoresizingMaskIntoConstraints="NO" id="7JH-zp-Dij">
+                                <rect key="frame" x="147" y="698" width="120" height="18"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yek-B3-gGF">
+                                <rect key="frame" x="39.5" y="152" width="335" height="371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="371" id="fiu-FR-y2X"/>
+                                    <constraint firstAttribute="width" constant="335" id="mDa-8l-XV2"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="myQR"/>
+                                <connections>
+                                    <segue destination="jKe-7U-Ml4" kind="presentation" id="cOZ-du-ZCE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ads-rH-3bp" firstAttribute="top" secondItem="BXd-Pb-RfF" secondAttribute="bottom" constant="64" id="2Un-tR-DjG"/>
+                            <constraint firstItem="Yek-B3-gGF" firstAttribute="top" secondItem="k8Z-Q7-CDa" secondAttribute="top" constant="64" id="57S-Wk-coV"/>
+                            <constraint firstItem="7JH-zp-Dij" firstAttribute="centerX" secondItem="meh-0E-odg" secondAttribute="centerX" id="Mhd-yv-WUF"/>
+                            <constraint firstItem="Ads-rH-3bp" firstAttribute="centerX" secondItem="meh-0E-odg" secondAttribute="centerX" id="OLw-cs-xjR"/>
+                            <constraint firstItem="Yek-B3-gGF" firstAttribute="centerX" secondItem="meh-0E-odg" secondAttribute="centerX" id="XRB-Qd-cpX"/>
+                            <constraint firstItem="BXd-Pb-RfF" firstAttribute="centerX" secondItem="meh-0E-odg" secondAttribute="centerX" id="eWM-er-QdV"/>
+                            <constraint firstItem="BXd-Pb-RfF" firstAttribute="top" secondItem="Yek-B3-gGF" secondAttribute="bottom" constant="40" id="hCb-Ib-Faj"/>
+                            <constraint firstItem="7JH-zp-Dij" firstAttribute="top" secondItem="Ads-rH-3bp" secondAttribute="bottom" constant="32" id="zxK-be-S52"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k8Z-Q7-CDa"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My QR Code" id="nvA-AA-GAH">
+                        <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" id="Pfm-6L-M41">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="onClose:" destination="4z6-JV-SYX" id="6C6-TA-rYV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uj-OT-v7l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036.231884057971" y="-13.392857142857142"/>
+        </scene>
+        <!--MyProfileScreen-->
+        <scene sceneID="uIR-TL-7Lf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyProfileScreen" id="jKe-7U-Ml4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="DOY-tZ-ZhK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t5T-Kl-KES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kIQ-X0-n7T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KPL-4T-z0A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xw7-6G-ZVt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4z6-JV-SYX" kind="relationship" relationship="rootViewController" id="Y6F-Xm-Hqz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="roQ-Ot-apC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126.08695652173914" y="-13.392857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="myQR" width="335" height="371"/>
+        <image name="shareCode" width="120" height="18"/>
+        <image name="xmark" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

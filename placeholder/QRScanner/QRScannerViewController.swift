@@ -97,7 +97,7 @@ class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
     }
     //TODO: WHAT TO DO WITH THE QR CODE LOL
     func found(code: String) {
-        print(code)
+        performSegue(withIdentifier: "toPaymentScreen", sender: nil)
     }
 
     override var prefersStatusBarHidden: Bool {

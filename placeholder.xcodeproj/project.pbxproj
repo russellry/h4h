@@ -8,14 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		FA6CAA2F2C5971448E567315 /* Pods_placeholder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C51BD9C2A0256B20D8614F36 /* Pods_placeholder.framework */; };
+		FB2C05F224028EB20041FF0A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C05F124028EB20041FF0A /* API.swift */; };
+		FB2C05F524029D350041FF0A /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C05F424029D350041FF0A /* WalletViewController.swift */; };
+		FB2C05F724029D3F0041FF0A /* WalletScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2C05F624029D3F0041FF0A /* WalletScreen.storyboard */; };
+		FB2C05FA2402A1620041FF0A /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C05F92402A1620041FF0A /* TransactionsViewController.swift */; };
+		FB2C05FC2402A16B0041FF0A /* TransactionsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2C05FB2402A16B0041FF0A /* TransactionsScreen.storyboard */; };
+		FB2C05FF2402A4DD0041FF0A /* MyQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C05FE2402A4DD0041FF0A /* MyQRViewController.swift */; };
+		FB2C06012402A4EE0041FF0A /* MyQRScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2C06002402A4EE0041FF0A /* MyQRScreen.storyboard */; };
+		FB2C06052402AD1F0041FF0A /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C06032402A8B80041FF0A /* MyProfileViewController.swift */; };
+		FB2C06062402AD210041FF0A /* MyProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2C06042402A8BB0041FF0A /* MyProfileScreen.storyboard */; };
 		FBBC07EB2400D279001A7946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC07EA2400D279001A7946 /* AppDelegate.swift */; };
 		FBBC07ED2400D279001A7946 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC07EC2400D279001A7946 /* SceneDelegate.swift */; };
 		FBBC07EF2400D279001A7946 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC07EE2400D279001A7946 /* CategoryViewController.swift */; };
 		FBBC07F42400D279001A7946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC07F22400D279001A7946 /* Main.storyboard */; };
 		FBBC07F62400D27B001A7946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBC07F52400D27B001A7946 /* Assets.xcassets */; };
 		FBBC07F92400D27B001A7946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC07F72400D27B001A7946 /* LaunchScreen.storyboard */; };
-		FBBC08052401D10B001A7946 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC08042401D10B001A7946 /* LoginViewController.swift */; };
-		FBBC08082401D129001A7946 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC08072401D129001A7946 /* LoginScreen.storyboard */; };
 		FBBC080B2401D2FA001A7946 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC080A2401D2F9001A7946 /* MapViewController.swift */; };
 		FBBC080D2401D304001A7946 /* MapScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC080C2401D304001A7946 /* MapScreen.storyboard */; };
 		FBBC084D2401EC84001A7946 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC084C2401EC84001A7946 /* QRScannerViewController.swift */; };
@@ -30,12 +37,24 @@
 		FBBC087524025F13001A7946 /* ProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC087424025F13001A7946 /* ProfileScreen.storyboard */; };
 		FBBC087A2402744F001A7946 /* BenefactorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC08792402744F001A7946 /* BenefactorsViewController.swift */; };
 		FBBC087C24027458001A7946 /* BenefactorsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC087B24027458001A7946 /* BenefactorsScreen.storyboard */; };
+		FBBC0881240279F1001A7946 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = FBBC0880240279F1001A7946 /* schema.json */; };
+		FBBC088324027AD9001A7946 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC088224027AD9001A7946 /* Network.swift */; };
+		FBBC088524027BBB001A7946 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = FBBC088424027BBB001A7946 /* schema.graphql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		59E2223FBA852098182A3267 /* Pods-placeholder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-placeholder.debug.xcconfig"; path = "Target Support Files/Pods-placeholder/Pods-placeholder.debug.xcconfig"; sourceTree = "<group>"; };
 		90209FEEA832ECDAB2F9A8BD /* Pods-placeholder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-placeholder.release.xcconfig"; path = "Target Support Files/Pods-placeholder/Pods-placeholder.release.xcconfig"; sourceTree = "<group>"; };
 		C51BD9C2A0256B20D8614F36 /* Pods_placeholder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_placeholder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2C05F124028EB20041FF0A /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = placeholder/API.swift; sourceTree = SOURCE_ROOT; };
+		FB2C05F424029D350041FF0A /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		FB2C05F624029D3F0041FF0A /* WalletScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalletScreen.storyboard; sourceTree = "<group>"; };
+		FB2C05F92402A1620041FF0A /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		FB2C05FB2402A16B0041FF0A /* TransactionsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionsScreen.storyboard; sourceTree = "<group>"; };
+		FB2C05FE2402A4DD0041FF0A /* MyQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRViewController.swift; sourceTree = "<group>"; };
+		FB2C06002402A4EE0041FF0A /* MyQRScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyQRScreen.storyboard; sourceTree = "<group>"; };
+		FB2C06032402A8B80041FF0A /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		FB2C06042402A8BB0041FF0A /* MyProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyProfileScreen.storyboard; sourceTree = "<group>"; };
 		FBBC07E72400D279001A7946 /* placeholder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = placeholder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBC07EA2400D279001A7946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBBC07EC2400D279001A7946 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,8 +63,6 @@
 		FBBC07F52400D27B001A7946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBBC07F82400D27B001A7946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBBC07FA2400D27B001A7946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBBC08042401D10B001A7946 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FBBC08072401D129001A7946 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		FBBC080A2401D2F9001A7946 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FBBC080C2401D304001A7946 /* MapScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapScreen.storyboard; sourceTree = "<group>"; };
 		FBBC084C2401EC84001A7946 /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +77,9 @@
 		FBBC087424025F13001A7946 /* ProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileScreen.storyboard; sourceTree = "<group>"; };
 		FBBC08792402744F001A7946 /* BenefactorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefactorsViewController.swift; sourceTree = "<group>"; };
 		FBBC087B24027458001A7946 /* BenefactorsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BenefactorsScreen.storyboard; sourceTree = "<group>"; };
+		FBBC0880240279F1001A7946 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		FBBC088224027AD9001A7946 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FBBC088424027BBB001A7946 /* schema.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +111,42 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FB2C05F324029D260041FF0A /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				FB2C05F424029D350041FF0A /* WalletViewController.swift */,
+				FB2C05F624029D3F0041FF0A /* WalletScreen.storyboard */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		FB2C05F82402A14F0041FF0A /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				FB2C05F92402A1620041FF0A /* TransactionsViewController.swift */,
+				FB2C05FB2402A16B0041FF0A /* TransactionsScreen.storyboard */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		FB2C05FD2402A4C60041FF0A /* MyQR */ = {
+			isa = PBXGroup;
+			children = (
+				FB2C05FE2402A4DD0041FF0A /* MyQRViewController.swift */,
+				FB2C06002402A4EE0041FF0A /* MyQRScreen.storyboard */,
+			);
+			path = MyQR;
+			sourceTree = "<group>";
+		};
+		FB2C06022402A8A80041FF0A /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				FB2C06032402A8B80041FF0A /* MyProfileViewController.swift */,
+				FB2C06042402A8BB0041FF0A /* MyProfileScreen.storyboard */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
 		FBBC07DE2400D279001A7946 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +168,12 @@
 		FBBC07E92400D279001A7946 /* placeholder */ = {
 			isa = PBXGroup;
 			children = (
+				FB2C06022402A8A80041FF0A /* MyProfile */,
+				FB2C05FD2402A4C60041FF0A /* MyQR */,
+				FB2C05F82402A14F0041FF0A /* Transactions */,
+				FB2C05F324029D260041FF0A /* Wallet */,
+				FBBC0880240279F1001A7946 /* schema.json */,
+				FB2C05F124028EB20041FF0A /* API.swift */,
 				FBBC08782402743F001A7946 /* Benefactors */,
 				FBBC087124025EE1001A7946 /* Profile */,
 				FBBC086C24022531001A7946 /* Payment */,
@@ -119,23 +181,15 @@
 				FBBC084B2401EC57001A7946 /* QRScanner */,
 				FBBC080E2401DA14001A7946 /* Tabs */,
 				FBBC08092401D2DF001A7946 /* Map */,
-				FBBC08062401D117001A7946 /* Login */,
 				FBBC07EA2400D279001A7946 /* AppDelegate.swift */,
 				FBBC07EC2400D279001A7946 /* SceneDelegate.swift */,
 				FBBC07F52400D27B001A7946 /* Assets.xcassets */,
 				FBBC07F72400D27B001A7946 /* LaunchScreen.storyboard */,
 				FBBC07FA2400D27B001A7946 /* Info.plist */,
+				FBBC088224027AD9001A7946 /* Network.swift */,
+				FBBC088424027BBB001A7946 /* schema.graphql */,
 			);
 			path = placeholder;
-			sourceTree = "<group>";
-		};
-		FBBC08062401D117001A7946 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				FBBC08042401D10B001A7946 /* LoginViewController.swift */,
-				FBBC08072401D129001A7946 /* LoginScreen.storyboard */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		FBBC08092401D2DF001A7946 /* Map */ = {
@@ -211,6 +265,7 @@
 			buildConfigurationList = FBBC07FD2400D27B001A7946 /* Build configuration list for PBXNativeTarget "placeholder" */;
 			buildPhases = (
 				B2768D2EDACF239D98F82752 /* [CP] Check Pods Manifest.lock */,
+				FBBC088624027CEA001A7946 /* Generate Apollo GraphQL API */,
 				FBBC07E32400D279001A7946 /* Sources */,
 				FBBC07E42400D279001A7946 /* Frameworks */,
 				FBBC07E52400D279001A7946 /* Resources */,
@@ -221,6 +276,8 @@
 			dependencies = (
 			);
 			name = placeholder;
+			packageProductDependencies = (
+			);
 			productName = placeholder;
 			productReference = FBBC07E72400D279001A7946 /* placeholder.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +306,8 @@
 				Base,
 			);
 			mainGroup = FBBC07DE2400D279001A7946;
+			packageReferences = (
+			);
 			productRefGroup = FBBC07E82400D279001A7946 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,16 +323,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBBC080D2401D304001A7946 /* MapScreen.storyboard in Resources */,
+				FB2C05F724029D3F0041FF0A /* WalletScreen.storyboard in Resources */,
 				FBBC08562401F04F001A7946 /* CategoryDetailScreen.storyboard in Resources */,
 				FBBC07F92400D27B001A7946 /* LaunchScreen.storyboard in Resources */,
 				FBBC08542401F045001A7946 /* CategoryScreen.storyboard in Resources */,
+				FB2C06012402A4EE0041FF0A /* MyQRScreen.storyboard in Resources */,
+				FBBC0881240279F1001A7946 /* schema.json in Resources */,
 				FBBC087C24027458001A7946 /* BenefactorsScreen.storyboard in Resources */,
+				FB2C06062402AD210041FF0A /* MyProfileScreen.storyboard in Resources */,
 				FBBC087024022553001A7946 /* PaymentScreen.storyboard in Resources */,
 				FBBC084F2401EC90001A7946 /* QRScannerScreen.storyboard in Resources */,
 				FBBC07F62400D27B001A7946 /* Assets.xcassets in Resources */,
-				FBBC08082401D129001A7946 /* LoginScreen.storyboard in Resources */,
 				FBBC087524025F13001A7946 /* ProfileScreen.storyboard in Resources */,
+				FB2C05FC2402A16B0041FF0A /* TransactionsScreen.storyboard in Resources */,
 				FBBC07F42400D279001A7946 /* Main.storyboard in Resources */,
+				FBBC088524027BBB001A7946 /* schema.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +383,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FBBC088624027CEA001A7946 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -326,17 +408,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBBC08052401D10B001A7946 /* LoginViewController.swift in Sources */,
 				FBBC085A240204DF001A7946 /* CardTableViewCell.swift in Sources */,
+				FBBC088324027AD9001A7946 /* Network.swift in Sources */,
 				FBBC07EF2400D279001A7946 /* CategoryViewController.swift in Sources */,
 				FBBC07EB2400D279001A7946 /* AppDelegate.swift in Sources */,
 				FBBC084D2401EC84001A7946 /* QRScannerViewController.swift in Sources */,
 				FBBC086E2402254A001A7946 /* PaymentViewController.swift in Sources */,
 				FBBC07ED2400D279001A7946 /* SceneDelegate.swift in Sources */,
+				FB2C05F224028EB20041FF0A /* API.swift in Sources */,
+				FB2C05F524029D350041FF0A /* WalletViewController.swift in Sources */,
 				FBBC087324025F0A001A7946 /* ProfileViewController.swift in Sources */,
+				FB2C05FF2402A4DD0041FF0A /* MyQRViewController.swift in Sources */,
 				FBBC080B2401D2FA001A7946 /* MapViewController.swift in Sources */,
 				FBBC08522401F035001A7946 /* CategoryDetailViewController.swift in Sources */,
 				FBBC087A2402744F001A7946 /* BenefactorsViewController.swift in Sources */,
+				FB2C06052402AD1F0041FF0A /* MyProfileViewController.swift in Sources */,
+				FB2C05FA2402A1620041FF0A /* TransactionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

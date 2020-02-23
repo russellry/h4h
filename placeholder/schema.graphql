@@ -1,0 +1,6 @@
+
+query getDonor {
+   donor{
+        first_name
+    }
+}

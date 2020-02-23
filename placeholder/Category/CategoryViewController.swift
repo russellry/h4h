@@ -13,6 +13,16 @@ class CategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        Network.shared.apollo.fetch(query: GetDonorQuery()) { result in
+          switch result {
+          case .success(let graphQLResult):
+            print("Success! Result: \(graphQLResult)")
+//            print(graphQLResult.data?.donor)
+          case .failure(let error):
+            print("Failure! Error: \(error)")
+          }
+        }
+
     }
 
 

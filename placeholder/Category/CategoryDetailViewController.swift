@@ -54,6 +54,10 @@ class CategoryDetailViewController: UIViewController,UITableViewDelegate
      // Get the new view controller using segue.destination.
      // Pass the selected object to the new view controller.
      }
+
      */
+    @IBAction func onClick(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     
 }
