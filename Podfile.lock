@@ -1,0 +1,16 @@
+PODS:
+  - Stripe (19.0.0)
+
+DEPENDENCIES:
+  - Stripe
+
+SPEC REPOS:
+  trunk:
+    - Stripe
+
+SPEC CHECKSUMS:
+  Stripe: 5afd38a520f7a1a16b609127165d517fa9f7de32
+
+PODFILE CHECKSUM: c5f642d8d61d8f868bb117dde9b7439e0a914d44
+
+COCOAPODS: 1.8.4

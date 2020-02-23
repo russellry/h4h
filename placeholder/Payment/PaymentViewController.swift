@@ -30,7 +30,6 @@ class PaymentViewController: UIViewController, UITextFieldDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         startCheckout()
         payButton.addTarget(self, action: #selector(pay), for: .touchUpInside)
-
     }
     
     func displayAlert(title: String, message: String, restartDemo: Bool = false) {
@@ -51,10 +50,12 @@ class PaymentViewController: UIViewController, UITextFieldDelegate {
     func startCheckout() {
         // Create a PaymentIntent by calling the sample server's /create-payment-intent endpoint.
         let url = URL(string: BackendUrl + "create-payment-intent")!
+        let dbl = NSString(string: amountTextField.text!).doubleValue
+        print("dbl value is... " + String(dbl))
         let json: [String: Any] = [
             "currency": "usd",
             "items": [
-                ["id": "photo_subscription", "price": "5.00"]
+                ["id": "photo_subscription", "price": "\(Int(dbl) * 100)"]
             ]
         ]
         var request = URLRequest(url: url)
@@ -83,29 +84,40 @@ class PaymentViewController: UIViewController, UITextFieldDelegate {
     
     @objc
     func pay() {
+//        startCheckout()
         guard let paymentIntentClientSecret = paymentIntentClientSecret else {
             return;
         }
         // Collect card details
-        let cardParams = cardTextField.cardParams
+//        let cardParams = cardTextField.cardParams
+        let cardParams = STPPaymentMethodCardParams()
+//        cardParams.name = "Jenny Rosen"
+        cardParams.number = "4242424242424242"
+        cardParams.expMonth = 12
+        cardParams.expYear = 24
+        cardParams.cvc = "424"
         let paymentMethodParams = STPPaymentMethodParams(card: cardParams, billingDetails: nil, metadata: nil)
         let paymentIntentParams = STPPaymentIntentParams(clientSecret: paymentIntentClientSecret)
         paymentIntentParams.paymentMethodParams = paymentMethodParams
-
+        print("entered")
         // Submit the payment
         let paymentHandler = STPPaymentHandler.shared()
         paymentHandler.confirmPayment(withParams: paymentIntentParams, authenticationContext: self) { (status, paymentIntent, error) in
             switch (status) {
             case .failed:
+                print("failed")
                 self.displayAlert(title: "Payment failed", message: error?.localizedDescription ?? "")
                 break
             case .canceled:
+                print("canceled")
                 self.displayAlert(title: "Payment canceled", message: error?.localizedDescription ?? "")
                 break
             case .succeeded:
+                print("success")
                 self.displayAlert(title: "Payment succeeded", message: paymentIntent?.description ?? "", restartDemo: true)
                 break
             @unknown default:
+                print("error")
                 fatalError()
                 break
             }
