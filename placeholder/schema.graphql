@@ -1,6 +1,7 @@
 
-query getDonor {
-   donor{
-        first_name
+query getVendor {
+   vendor{
+        description
+        name
     }
 }

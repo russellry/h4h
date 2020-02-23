@@ -1,0 +1,22 @@
+PODS:
+  - Apollo (0.23.0):
+    - Apollo/Core (= 0.23.0)
+  - Apollo/Core (0.23.0)
+  - Stripe (19.0.0)
+
+DEPENDENCIES:
+  - Apollo
+  - Stripe
+
+SPEC REPOS:
+  trunk:
+    - Apollo
+    - Stripe
+
+SPEC CHECKSUMS:
+  Apollo: 7ccde5e643aab4a95ed4926fe9b3a593740c8b73
+  Stripe: 5afd38a520f7a1a16b609127165d517fa9f7de32
+
+PODFILE CHECKSUM: 51d2c86aef71e9ed1e32206d26c9c97a9258d8f4
+
+COCOAPODS: 1.8.4

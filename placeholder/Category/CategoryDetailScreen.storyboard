@@ -15,31 +15,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bWw-sd-Rwc">
-                                <rect key="frame" x="16" y="88" width="382" height="766"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardCell" id="B93-YH-pPx" userLabel="CardCell" customClass="CardTableViewCell" customModule="placeholder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="382" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B93-YH-pPx" id="M2V-hh-yYC">
-                                            <rect key="frame" x="0.0" y="0.0" width="382" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0J-d3-mjT">
+                                <rect key="frame" x="46.5" y="120" width="321" height="568"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="321" id="hea-M6-GZG"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Detail"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="0nu-Zq-rYO" id="GbL-nW-qdg"/>
-                                    <outlet property="delegate" destination="0nu-Zq-rYO" id="JwE-J2-0HW"/>
+                                    <segue destination="VPW-12-j9j" kind="popoverPresentation" popoverAnchorView="b0J-d3-mjT" id="Jji-3r-7Mf">
+                                        <popoverArrowDirection key="popoverArrowDirection" right="YES"/>
+                                    </segue>
                                 </connections>
-                            </tableView>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="bWw-sd-Rwc" firstAttribute="leading" secondItem="TVr-JM-Kjl" secondAttribute="leading" constant="16" id="Vf3-7B-bhH"/>
-                            <constraint firstItem="TVr-JM-Kjl" firstAttribute="bottom" secondItem="bWw-sd-Rwc" secondAttribute="bottom" constant="8" id="Wbp-on-wXm"/>
-                            <constraint firstItem="bWw-sd-Rwc" firstAttribute="top" secondItem="TVr-JM-Kjl" secondAttribute="top" id="bhQ-s7-ylq"/>
-                            <constraint firstItem="TVr-JM-Kjl" firstAttribute="trailing" secondItem="bWw-sd-Rwc" secondAttribute="trailing" constant="16" id="pdf-gl-zkA"/>
+                            <constraint firstItem="b0J-d3-mjT" firstAttribute="centerX" secondItem="ZOJ-gd-Q1F" secondAttribute="centerX" id="Jw6-Lc-NVE"/>
+                            <constraint firstItem="b0J-d3-mjT" firstAttribute="top" secondItem="TVr-JM-Kjl" secondAttribute="top" constant="32" id="c9J-sE-XpJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TVr-JM-Kjl"/>
                     </view>
@@ -50,13 +42,20 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="detailTableView" destination="bWw-sd-Rwc" id="gQ5-Pn-V7g"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNa-Ct-cUR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="83.705357142857139"/>
+        </scene>
+        <!--MapScreen-->
+        <scene sceneID="5LG-3g-Uay">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MapScreen" id="VPW-12-j9j" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KtV-Vh-1h6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYo-vv-s2S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="40"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jqu-Y5-1OA">
@@ -78,6 +77,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Detail" width="321" height="568"/>
         <image name="chevron.left" catalog="system" width="48" height="64"/>
     </resources>
 </document>
