@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tp3-J5-LFU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location-->
+        <scene sceneID="HyB-SL-igk">
+            <objects>
+                <viewController id="R73-XX-lgN" customClass="MapViewController" customModule="placeholder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ErA-zC-okg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KXn-l4-dog">
+                                <rect key="frame" x="8" y="96" width="398" height="687"/>
+                                <connections>
+                                    <outlet property="delegate" destination="R73-XX-lgN" id="OZe-7X-EC4"/>
+                                </connections>
+                            </mapView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="N6L-H1-R6W">
+                                <rect key="frame" x="6" y="824" width="402" height="31"/>
+                                <connections>
+                                    <action selector="onRadiusValueChange:" destination="R73-XX-lgN" eventType="valueChanged" id="dl9-ZD-WfX"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radius: Show me listings within a specific distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99u-0G-XSt">
+                                <rect key="frame" x="16" y="799" width="382" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="N6L-H1-R6W" firstAttribute="top" secondItem="99u-0G-XSt" secondAttribute="bottom" constant="8" id="13V-c9-C5O"/>
+                            <constraint firstItem="hy6-Pq-wAB" firstAttribute="trailing" secondItem="KXn-l4-dog" secondAttribute="trailing" constant="8" id="1qQ-Mn-qDT"/>
+                            <constraint firstItem="99u-0G-XSt" firstAttribute="leading" secondItem="hy6-Pq-wAB" secondAttribute="leading" constant="16" id="4uw-4L-C1L"/>
+                            <constraint firstItem="N6L-H1-R6W" firstAttribute="leading" secondItem="hy6-Pq-wAB" secondAttribute="leading" constant="8" id="YGn-DO-LNh"/>
+                            <constraint firstItem="hy6-Pq-wAB" firstAttribute="trailing" secondItem="99u-0G-XSt" secondAttribute="trailing" constant="16" id="b7S-0Y-kOo"/>
+                            <constraint firstItem="KXn-l4-dog" firstAttribute="top" secondItem="hy6-Pq-wAB" secondAttribute="top" constant="8" id="fm8-3i-1wa"/>
+                            <constraint firstItem="hy6-Pq-wAB" firstAttribute="trailing" secondItem="N6L-H1-R6W" secondAttribute="trailing" constant="8" id="jh3-nB-bgV"/>
+                            <constraint firstItem="hy6-Pq-wAB" firstAttribute="bottom" secondItem="N6L-H1-R6W" secondAttribute="bottom" constant="8" id="jow-6Y-ug8"/>
+                            <constraint firstItem="99u-0G-XSt" firstAttribute="top" secondItem="KXn-l4-dog" secondAttribute="bottom" constant="16" id="wbk-Bs-uPw"/>
+                            <constraint firstItem="KXn-l4-dog" firstAttribute="leading" secondItem="hy6-Pq-wAB" secondAttribute="leading" constant="8" id="xef-Sc-upn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hy6-Pq-wAB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Location" id="JiQ-Lo-OTn">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Mwq-Yp-Nfg"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="KXn-l4-dog" id="wtL-co-2iz"/>
+                        <outlet property="radiusSlider" destination="N6L-H1-R6W" id="Ac0-yZ-HUp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MhZ-ut-MuE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hWe-xt-a1X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tp3-J5-LFU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ELB-hM-VlB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="R73-XX-lgN" kind="relationship" relationship="rootViewController" id="EmE-A6-EYS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HHc-Lo-qbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>

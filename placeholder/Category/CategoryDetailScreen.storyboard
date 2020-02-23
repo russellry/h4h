@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0nu-Zq-rYO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Category Detail View Controller-->
+        <scene sceneID="G5d-4s-VOn">
+            <objects>
+                <viewController id="0nu-Zq-rYO" customClass="CategoryDetailViewController" customModule="placeholder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZOJ-gd-Q1F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZn-VU-BLb">
+                                <rect key="frame" x="16" y="52" width="193" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bWw-sd-Rwc">
+                                <rect key="frame" x="16" y="101" width="382" height="753"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardCell" id="B93-YH-pPx" userLabel="CardCell" customClass="CardTableViewCell" customModule="placeholder" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="382" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B93-YH-pPx" id="M2V-hh-yYC">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bWw-sd-Rwc" firstAttribute="top" secondItem="HZn-VU-BLb" secondAttribute="bottom" constant="8" id="BuM-sc-YQd"/>
+                            <constraint firstItem="HZn-VU-BLb" firstAttribute="leading" secondItem="TVr-JM-Kjl" secondAttribute="leading" constant="16" id="Hmk-Ww-VFQ"/>
+                            <constraint firstItem="bWw-sd-Rwc" firstAttribute="leading" secondItem="TVr-JM-Kjl" secondAttribute="leading" constant="16" id="Vf3-7B-bhH"/>
+                            <constraint firstItem="TVr-JM-Kjl" firstAttribute="bottom" secondItem="bWw-sd-Rwc" secondAttribute="bottom" constant="8" id="Wbp-on-wXm"/>
+                            <constraint firstItem="HZn-VU-BLb" firstAttribute="top" secondItem="TVr-JM-Kjl" secondAttribute="top" constant="8" id="jsG-ZT-4sF"/>
+                            <constraint firstItem="TVr-JM-Kjl" firstAttribute="trailing" secondItem="bWw-sd-Rwc" secondAttribute="trailing" constant="16" id="pdf-gl-zkA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TVr-JM-Kjl"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailTableView" destination="bWw-sd-Rwc" id="gQ5-Pn-V7g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mNa-Ct-cUR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="84"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  placeholder
 //
 //  Created by Russell Ong on 22/2/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class CategoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
