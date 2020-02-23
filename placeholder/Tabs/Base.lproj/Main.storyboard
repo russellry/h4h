@@ -25,11 +25,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--CategoryScreen-->
+        <!--QRScannerScreen-->
         <scene sceneID="nlq-8E-dDu">
             <objects>
-                <viewControllerPlaceholder storyboardName="CategoryScreen" id="gXP-6S-drL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="e5e-mg-CFA"/>
+                <viewControllerPlaceholder storyboardName="QRScannerScreen" id="gXP-6S-drL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="pencil.and.outline" catalog="system" id="e5e-mg-CFA"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBj-75-3xi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="691" y="121"/>
         </scene>
-        <!--QRScannerScreen-->
+        <!--CategoryScreen-->
         <scene sceneID="vvS-VR-SVm">
             <objects>
-                <viewControllerPlaceholder storyboardName="QRScannerScreen" id="oDz-m8-idw" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="CategoryScreen" id="oDz-m8-idw" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="p7E-id-nxa"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ML-3O-rhb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -56,4 +56,7 @@
             <point key="canvasLocation" x="692" y="44"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pencil.and.outline" catalog="system" width="64" height="58"/>
+    </resources>
 </document>

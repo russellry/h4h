@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z4p-ip-u7B">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Benefactors-->
+        <scene sceneID="rfC-ec-fTD">
+            <objects>
+                <viewController id="usE-Iz-x2I" customClass="BenefactorsViewController" customModule="placeholder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Ik-18-klP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Fsh-yZ-lpk">
+                                <rect key="frame" x="16" y="88" width="382" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Benefactor" translatesAutoresizingMaskIntoConstraints="NO" id="P0A-XL-DPv">
+                                <rect key="frame" x="48" y="144" width="318" height="71"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="P0A-XL-DPv" firstAttribute="centerX" secondItem="1Ik-18-klP" secondAttribute="centerX" id="GzT-TX-oga"/>
+                            <constraint firstItem="YQ6-dS-war" firstAttribute="trailing" secondItem="Fsh-yZ-lpk" secondAttribute="trailing" constant="16" id="NM0-gT-iCK"/>
+                            <constraint firstItem="Fsh-yZ-lpk" firstAttribute="leading" secondItem="YQ6-dS-war" secondAttribute="leading" constant="16" id="QbN-41-5GA"/>
+                            <constraint firstItem="Fsh-yZ-lpk" firstAttribute="top" secondItem="YQ6-dS-war" secondAttribute="top" id="Vby-Rn-AHL"/>
+                            <constraint firstItem="P0A-XL-DPv" firstAttribute="top" secondItem="Fsh-yZ-lpk" secondAttribute="bottom" symbolic="YES" id="XzD-qK-zZB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YQ6-dS-war"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Benefactors" id="Ig5-1a-DMp">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="YFG-q9-Wly"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZjE-lf-qcU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="taE-gx-9nq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z4p-ip-u7B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Faa-9u-nT6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="usE-Iz-x2I" kind="relationship" relationship="rootViewController" id="Tgh-8T-lP3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rq3-BO-GPO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Benefactor" width="318" height="71"/>
+        <image name="chevron.left" catalog="system" width="48" height="64"/>
+    </resources>
+</document>

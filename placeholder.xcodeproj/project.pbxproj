@@ -28,6 +28,8 @@
 		FBBC087024022553001A7946 /* PaymentScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC086F24022553001A7946 /* PaymentScreen.storyboard */; };
 		FBBC087324025F0A001A7946 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC087224025F0A001A7946 /* ProfileViewController.swift */; };
 		FBBC087524025F13001A7946 /* ProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC087424025F13001A7946 /* ProfileScreen.storyboard */; };
+		FBBC087A2402744F001A7946 /* BenefactorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC08792402744F001A7946 /* BenefactorsViewController.swift */; };
+		FBBC087C24027458001A7946 /* BenefactorsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC087B24027458001A7946 /* BenefactorsScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		FBBC086F24022553001A7946 /* PaymentScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaymentScreen.storyboard; sourceTree = "<group>"; };
 		FBBC087224025F0A001A7946 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FBBC087424025F13001A7946 /* ProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileScreen.storyboard; sourceTree = "<group>"; };
+		FBBC08792402744F001A7946 /* BenefactorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefactorsViewController.swift; sourceTree = "<group>"; };
+		FBBC087B24027458001A7946 /* BenefactorsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BenefactorsScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		FBBC07E92400D279001A7946 /* placeholder */ = {
 			isa = PBXGroup;
 			children = (
+				FBBC08782402743F001A7946 /* Benefactors */,
 				FBBC087124025EE1001A7946 /* Profile */,
 				FBBC086C24022531001A7946 /* Payment */,
 				FBBC08502401F01E001A7946 /* Category */,
@@ -189,6 +194,15 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		FBBC08782402743F001A7946 /* Benefactors */ = {
+			isa = PBXGroup;
+			children = (
+				FBBC08792402744F001A7946 /* BenefactorsViewController.swift */,
+				FBBC087B24027458001A7946 /* BenefactorsScreen.storyboard */,
+			);
+			path = Benefactors;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,6 +267,7 @@
 				FBBC08562401F04F001A7946 /* CategoryDetailScreen.storyboard in Resources */,
 				FBBC07F92400D27B001A7946 /* LaunchScreen.storyboard in Resources */,
 				FBBC08542401F045001A7946 /* CategoryScreen.storyboard in Resources */,
+				FBBC087C24027458001A7946 /* BenefactorsScreen.storyboard in Resources */,
 				FBBC087024022553001A7946 /* PaymentScreen.storyboard in Resources */,
 				FBBC084F2401EC90001A7946 /* QRScannerScreen.storyboard in Resources */,
 				FBBC07F62400D27B001A7946 /* Assets.xcassets in Resources */,
@@ -321,6 +336,7 @@
 				FBBC087324025F0A001A7946 /* ProfileViewController.swift in Sources */,
 				FBBC080B2401D2FA001A7946 /* MapViewController.swift in Sources */,
 				FBBC08522401F035001A7946 /* CategoryDetailViewController.swift in Sources */,
+				FBBC087A2402744F001A7946 /* BenefactorsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

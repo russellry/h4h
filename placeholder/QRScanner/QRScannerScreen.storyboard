@@ -20,7 +20,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dva-kA-Bgr" userLabel="TextView">
-                                <rect key="frame" x="0.0" y="678.5" width="414" height="183.5"/>
+                                <rect key="frame" x="0.0" y="678.5" width="414" height="134.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQJ-8n-lic">
                                         <rect key="frame" x="188" y="0.0" width="38" height="30"/>
@@ -52,7 +52,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="f3a-tZ-GVO"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="camera" catalog="system" id="032-BF-uKm"/>
                     <navigationItem key="navigationItem" title="Scan QR Code" id="1XK-pI-s0D"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="textView" destination="dva-kA-Bgr" id="bSR-LK-lVa"/>
                     </connections>
@@ -72,6 +74,7 @@
         <!--Navigation Controller-->
         <scene sceneID="kw7-De-hMO">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCI-BO-J8Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jhn-Qt-uRo" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SC6-iG-bRI">
@@ -83,9 +86,11 @@
                         <segue destination="Awe-oL-4nd" kind="relationship" relationship="rootViewController" id="unz-gc-I40"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RCI-BO-J8Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-62.318840579710148" y="105.80357142857143"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="64" height="48"/>
+    </resources>
 </document>

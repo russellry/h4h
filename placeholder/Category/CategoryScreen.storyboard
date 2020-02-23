@@ -101,7 +101,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jph-vg-3vB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="category" id="Euf-Kh-ORd"/>
                     <navigationItem key="navigationItem" title="Categories" id="LnI-hW-tFs"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="LbI-mF-9iJ" kind="presentation" identifier="toCategoryDetail" modalPresentationStyle="fullScreen" id="FFn-pS-Txb"/>
                     </connections>
@@ -126,5 +128,6 @@
         <image name="Food" width="315" height="176"/>
         <image name="Furniture" width="315" height="150"/>
         <image name="Others" width="147" height="213"/>
+        <image name="category" width="20" height="20"/>
     </resources>
 </document>
