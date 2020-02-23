@@ -8,25 +8,36 @@
 
 import UIKit
 
+struct cardView{
+    
+}
+
 class CategoryDetailViewController: UIViewController,UITableViewDelegate
 , UITableViewDataSource {
+    @IBOutlet weak var detailTableView: UITableView!
+    let transportItems = ["Bus","Helicopter","Truck","Boat","Bicycle","Motorcycle","Plane","Train","Car","Scooter","Caravan"]
+
+
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return transportItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell", for: indexPath)
-        cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
-        
+
+        cell.textLabel?.text = transportItems[indexPath.row]
+            
+//        let imageName = UIImage(named: transportItems[indexPath.row])
+//        cell.imageView?.image = imageName
+
         return cell
     }
     
     
-    @IBOutlet weak var detailTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

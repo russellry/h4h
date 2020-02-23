@@ -16,5 +16,9 @@ class CategoryViewController: UIViewController {
     }
 
 
+    @IBAction func onClickFoodCategory(_ sender: Any) {
+        performSegue(withIdentifier: "toCategoryDetail", sender: nil)
+        
+    }
 }
 

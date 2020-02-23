@@ -15,9 +15,11 @@ import UIKit
 class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
-
+    @IBOutlet weak var textView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.bringSubviewToFront(textView)
 
         view.backgroundColor = UIColor.black
         captureSession = AVCaptureSession()
@@ -104,5 +106,8 @@ class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
+    }
+    @IBAction func moveToPayment(_ sender: Any) {
+        performSegue(withIdentifier: "toPaymentScreen", sender: nil)
     }
 }

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bf0-kJ-V0E">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Payment-->
+        <scene sceneID="7SC-GJ-ags">
+            <objects>
+                <viewController id="ocY-PW-cAG" customClass="PaymentViewController" customModule="placeholder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bbz-v0-OGg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kfc" translatesAutoresizingMaskIntoConstraints="NO" id="sXW-yq-6r7">
+                                <rect key="frame" x="121.5" y="120" width="171" height="138"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paymentman" translatesAutoresizingMaskIntoConstraints="NO" id="TfN-P6-aGO">
+                                <rect key="frame" x="88" y="290" width="238" height="232"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EA6-0R-VHL">
+                                <rect key="frame" x="150.5" y="530" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" clearsOnBeginEditing="YES" minimumFontSize="80" translatesAutoresizingMaskIntoConstraints="NO" id="eLa-R9-WvT">
+                                <rect key="frame" x="121" y="559" width="273" height="96"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="80"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuQ-0M-se3">
+                                <rect key="frame" x="147" y="663" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.32549019607843138" green="0.78431372549019607" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="pMu-vb-Iod"/>
+                                </constraints>
+                                <state key="normal" title="Pay">
+                                    <color key="titleColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="payClicked:" destination="ocY-PW-cAG" eventType="touchUpInside" id="iqO-Bu-CFt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TfN-P6-aGO" firstAttribute="centerX" secondItem="Bbz-v0-OGg" secondAttribute="centerX" id="0a5-nf-5HS"/>
+                            <constraint firstItem="BuQ-0M-se3" firstAttribute="top" secondItem="eLa-R9-WvT" secondAttribute="bottom" constant="8" id="EAr-u9-FVf"/>
+                            <constraint firstItem="7uW-Ir-ud4" firstAttribute="trailing" secondItem="eLa-R9-WvT" secondAttribute="trailing" constant="20" id="Gqn-Cs-HuH"/>
+                            <constraint firstItem="BuQ-0M-se3" firstAttribute="centerX" secondItem="Bbz-v0-OGg" secondAttribute="centerX" id="JFd-hj-o3L"/>
+                            <constraint firstItem="EA6-0R-VHL" firstAttribute="top" secondItem="TfN-P6-aGO" secondAttribute="bottom" constant="8" id="XRz-7A-qHX"/>
+                            <constraint firstItem="eLa-R9-WvT" firstAttribute="top" secondItem="EA6-0R-VHL" secondAttribute="bottom" constant="8" id="azK-0m-fBj"/>
+                            <constraint firstItem="sXW-yq-6r7" firstAttribute="centerX" secondItem="Bbz-v0-OGg" secondAttribute="centerX" id="duB-iE-Cbz"/>
+                            <constraint firstItem="TfN-P6-aGO" firstAttribute="top" secondItem="sXW-yq-6r7" secondAttribute="bottom" constant="32" id="gLS-K7-5WB"/>
+                            <constraint firstItem="sXW-yq-6r7" firstAttribute="top" secondItem="7uW-Ir-ud4" secondAttribute="top" constant="32" id="n3o-Ti-UOE"/>
+                            <constraint firstItem="eLa-R9-WvT" firstAttribute="leading" secondItem="7uW-Ir-ud4" secondAttribute="leading" constant="121" id="u7w-dD-e1n"/>
+                            <constraint firstItem="EA6-0R-VHL" firstAttribute="centerX" secondItem="Bbz-v0-OGg" secondAttribute="centerX" id="vKn-er-w2T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7uW-Ir-ud4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Payment" id="DUF-Ci-QjF">
+                        <barButtonItem key="leftBarButtonItem" title="✕" style="plain" id="6ei-oR-j7q">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3M7-0O-PsW">
+                                <rect key="frame" x="20" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="✕">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCloseButtonTapped:" destination="ocY-PW-cAG" eventType="touchUpInside" id="Tk9-Jp-Iga"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="amountTextField" destination="eLa-R9-WvT" id="uZi-NP-Cmd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mpl-1h-6t2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795.6521739130435" y="22.767857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Ns-IV-eGS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bf0-kJ-V0E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Nv-e1-9rF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ocY-PW-cAG" kind="relationship" relationship="rootViewController" id="3md-JO-fXG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Vp-TU-HeB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114.49275362318842" y="22.767857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kfc" width="171" height="138"/>
+        <image name="paymentman" width="238" height="232"/>
+    </resources>
+</document>

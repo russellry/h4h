@@ -25,6 +25,9 @@
 		FBBC08522401F035001A7946 /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC08512401F035001A7946 /* CategoryDetailViewController.swift */; };
 		FBBC08542401F045001A7946 /* CategoryScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC08532401F045001A7946 /* CategoryScreen.storyboard */; };
 		FBBC08562401F04F001A7946 /* CategoryDetailScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC08552401F04F001A7946 /* CategoryDetailScreen.storyboard */; };
+		FBBC085A240204DF001A7946 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC0859240204DF001A7946 /* CardTableViewCell.swift */; };
+		FBBC086E2402254A001A7946 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC086D2402254A001A7946 /* PaymentViewController.swift */; };
+		FBBC087024022553001A7946 /* PaymentScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC086F24022553001A7946 /* PaymentScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		FBBC08512401F035001A7946 /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
 		FBBC08532401F045001A7946 /* CategoryScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryScreen.storyboard; sourceTree = "<group>"; };
 		FBBC08552401F04F001A7946 /* CategoryDetailScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryDetailScreen.storyboard; sourceTree = "<group>"; };
+		FBBC0859240204DF001A7946 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		FBBC086D2402254A001A7946 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		FBBC086F24022553001A7946 /* PaymentScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaymentScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 		FBBC07E92400D279001A7946 /* placeholder */ = {
 			isa = PBXGroup;
 			children = (
+				FBBC086C24022531001A7946 /* Payment */,
 				FBBC08502401F01E001A7946 /* Category */,
 				FBBC084B2401EC57001A7946 /* QRScanner */,
 				FBBC080E2401DA14001A7946 /* Tabs */,
@@ -139,8 +146,18 @@
 				FBBC08532401F045001A7946 /* CategoryScreen.storyboard */,
 				FBBC08512401F035001A7946 /* CategoryDetailViewController.swift */,
 				FBBC08552401F04F001A7946 /* CategoryDetailScreen.storyboard */,
+				FBBC0859240204DF001A7946 /* CardTableViewCell.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		FBBC086C24022531001A7946 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				FBBC086D2402254A001A7946 /* PaymentViewController.swift */,
+				FBBC086F24022553001A7946 /* PaymentScreen.storyboard */,
+			);
+			path = Payment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +176,8 @@
 			dependencies = (
 			);
 			name = placeholder;
+			packageProductDependencies = (
+			);
 			productName = placeholder;
 			productReference = FBBC07E72400D279001A7946 /* placeholder.app */;
 			productType = "com.apple.product-type.application";
@@ -187,6 +206,8 @@
 				Base,
 			);
 			mainGroup = FBBC07DE2400D279001A7946;
+			packageReferences = (
+			);
 			productRefGroup = FBBC07E82400D279001A7946 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -205,6 +226,7 @@
 				FBBC08562401F04F001A7946 /* CategoryDetailScreen.storyboard in Resources */,
 				FBBC07F92400D27B001A7946 /* LaunchScreen.storyboard in Resources */,
 				FBBC08542401F045001A7946 /* CategoryScreen.storyboard in Resources */,
+				FBBC087024022553001A7946 /* PaymentScreen.storyboard in Resources */,
 				FBBC084F2401EC90001A7946 /* QRScannerScreen.storyboard in Resources */,
 				FBBC07F62400D27B001A7946 /* Assets.xcassets in Resources */,
 				FBBC08082401D129001A7946 /* LoginScreen.storyboard in Resources */,
@@ -220,11 +242,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBBC08052401D10B001A7946 /* LoginViewController.swift in Sources */,
+				FBBC085A240204DF001A7946 /* CardTableViewCell.swift in Sources */,
 				FBBC07F12400D279001A7946 /* LikedViewController.swift in Sources */,
 				FBBC08012400D428001A7946 /* ChatViewController.swift in Sources */,
 				FBBC07EF2400D279001A7946 /* CategoryViewController.swift in Sources */,
 				FBBC07EB2400D279001A7946 /* AppDelegate.swift in Sources */,
 				FBBC084D2401EC84001A7946 /* QRScannerViewController.swift in Sources */,
+				FBBC086E2402254A001A7946 /* PaymentViewController.swift in Sources */,
 				FBBC08032400D42D001A7946 /* ProfileViewController.swift in Sources */,
 				FBBC07ED2400D279001A7946 /* SceneDelegate.swift in Sources */,
 				FBBC080B2401D2FA001A7946 /* MapViewController.swift in Sources */,
