@@ -79,6 +79,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="amountTextField" destination="eLa-R9-WvT" id="uZi-NP-Cmd"/>
+                        <outlet property="payButton" destination="BuQ-0M-se3" id="cwO-dM-Y7A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpl-1h-6t2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
